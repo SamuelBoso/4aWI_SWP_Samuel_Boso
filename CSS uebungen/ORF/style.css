@@ -1,0 +1,213 @@
+.test{
+    background-color:grey;
+}
+.container{
+    margin-left:50px;
+    width:1150px;
+    
+    
+}
+.navigation li {
+    display: inline-block;
+    color: white;
+    padding-left: 60px;
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 6px;   
+}
+
+.navigation {
+    background-color: #9E0B0F;
+    width: 1150px;
+    height: 30px;
+    
+}
+a {
+    color: white;
+    font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-feature-settings: "liga", "kern"
+
+}
+.orf_pic{
+    background-color: #BB131A;
+    height:77px;
+    width:1110px;
+    padding-left: 40px;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.orf_pic p{
+    font-family: "ORF ON",Arial,Helvetica;
+
+    font-weight: 300;
+    font-size: 1.625rem;
+    
+}
+.sitemap-menu{
+    margin-left:40px;
+}
+.sitenav{
+    background: #D32824;
+    border-bottom: 3px solid #E94E38;
+    height: 11px;
+
+    width: 1150px;
+}
+.navigation2{
+    background-color: #790000;
+
+    padding-top: 6px;
+    width: 1150px;
+    font-weight: 300;
+    font-size: 1.125rem;
+    height: 29px;
+    outline: none;
+    
+}
+.navigation2 li{
+    margin-top: 3px;
+    display: inline-block;
+    color: white;
+    align-items: center;
+    margin: 0 37px;
+}
+
+.content{ 
+    justify-content: center;
+    display:flex;
+    background-color: white;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -5px;
+    margin-bottom: 40px;
+}
+
+.story{
+    margin-top: -70px;
+    width:70%;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    color:red;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+.story p{
+    font-weight:400;
+    font-size: 18px;;
+}
+
+/* Responsive */
+
+@media (max-width:1150px)
+{
+    .test{
+        background-color:grey;
+    }
+    .container{
+        margin-left:auto;
+        width:auto;
+    }
+    .navigation {
+        background-color: #9E0B0F;
+        width: auto;
+        height: auto;
+        
+    }
+    a {
+        color: white;
+        font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+        font-feature-settings: "liga", "kern"
+    
+    }
+    .orf_pic{
+        background-color: #BB131A;
+        height:auto;
+        width:auto;
+        padding-left: 40px;
+        color:white;
+        display: flex;
+        align-items: center;
+    }
+    .orf_pic p{
+        font-family: "ORF ON",Arial,Helvetica;
+        font-weight: 300;
+        font-size: 1.625rem;
+        
+    }
+    .sitemap-menu{
+        margin-left:auto;
+    }
+    .sitenav{
+        background: #D32824;
+        border-bottom: 3px solid #E94E38;
+        height: 11px;
+        width: auto;
+    }
+    .navigation2{
+        background-color: #790000;
+        padding-top: 6px;
+        width: auto;
+        font-weight: 300;
+        font-size: 1.125rem;
+        height: 29px;
+        outline: none;
+        
+    }
+    .navigation2 li{
+        margin-top: 3px;
+        display: inline-block;
+        color: white;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .content{ 
+        justify-content: center;
+        display:flex;
+        background-color: white;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: -5px;
+        margin-bottom: 40px;
+    }
+    
+    .story{
+        margin-top: -70px;
+        width:70%;
+        background-color: white;
+        padding-left: auto;
+        padding-right: auto;
+        margin-bottom: 40px;
+    }
+    
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        color:red;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .story p{
+        font-weight:400;
+        font-size: 18px;
+}
+}
+   
+    
+   
+   
+  
+
+
+

@@ -1,0 +1,63 @@
+.upper{
+    height: 700px;
+    display:flex;
+    justify-content: space-between;
+    background-image: url("https://cdn.muenchen-p.de/.imaging/stk/responsive/galleryLarge/dms/sw/c/allianzarena/bg-2017/arena1/document/arena1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.Scorer{
+    margin-top:40px;
+}
+
+.Vereine{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.Assist{
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.Scorer h1{
+    font-family: Arial, Helvetica, sans-serif;   
+    font-size : 20px;
+    color: red;
+    font-weight: bold;
+
+}
+.Assist h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 20px;
+    color: blue;
+    font-weight: bold;
+}
+.Vereine h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.Scorer p{
+    font-family: Arial, Helvetica, sans-serif;   
+    font-size : 16px;
+    margin-top:10px;
+
+}
+.Assist p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 16px;
+    margin-top:10px;
+   
+}
+.Vereine p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 16px;
+    margin-top:10px;
+
+}
+.bottom{
+    display:flex;
+    justify-content: space-between;
+}
