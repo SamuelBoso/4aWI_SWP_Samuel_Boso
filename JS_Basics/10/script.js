@@ -2,7 +2,7 @@
 
 let config = {
     month: 0,
-    startday: 3,
+    startday: 1,
     months:
     [
         {name: "Jan", days:31},
@@ -28,22 +28,23 @@ function printdays(){
 
 printdays();
 
-function monthdays(){
-    let week = "";
-    for(i = 0; i<config.months.days;i++){
-        if(config.months.days[i] == "SO"){
-            console.log("kek" + "kek2")   
-        }
+function printMonth() {
 
-        
+    for (let p = 0; p < 12; p++) {
+
+        console.log(printdays());
+
     }
 }
-monthdays();
 
+function printweekdays() {
+    let b = config.months.days[i];
+    for (let i = 1; i <= config.months[0].days; i++) {
 
-
-function weekdays(){
-for(index = 1; index<config.startday; index++){
-    console.log("| -- |");
+        console.log("| " + i);
+    }
 }
-}
+
+printMonth();
+
+
