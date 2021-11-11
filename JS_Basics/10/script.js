@@ -2,7 +2,7 @@
 
 let config = {
     month: 0,
-    startday: 1,
+    startday: 0,
     months:
     [
         {name: "Jan", days:31},
@@ -23,28 +23,60 @@ let config = {
 }
 
 function printdays(){
-        console.log("| " + config.days.join(" | "));
+        console.log("| " + config.days.join(" | ") + " |");
 }
 
-printdays();
+function formatNumber(daynumber){
+    if(daynumber < 10){
+        return( "0" + daynumber);
+    }
+    else{
+        return(daynumber);
+    }
+}
+
+function offsethandler(monthlength){
+    
+    config.startday = 3;
+    config.startday = (config.startday + config.months[monthlength].days) % 7;
+    let offsettext = ""; 
+    for(let m = 1; m < config.startday; m++){
+        offsettext += " -- ";   
+        
+    }
+    console.log(offsettext);
+    }
+
+
 
 function printMonth() {
 
     for (let p = 0; p < 12; p++) {
-
-        console.log(printdays());
-
+        printdays();
+        offsethandler(p);
+        
+        let example = "| ";
+        for (let i = 1; i <= config.months[p].days; i++) {
+            
+            
+            example += formatNumber(i) + " | ";
+            
+            if (i % 7 == 0) {
+                
+                console.log(example);
+                example = "| ";
+            } else if (i == config.months[p].days) {
+                console.log(example);
+                example = "";
+            }
+        
+                     
+          
+        }
+        
+        
     }
-}
-
-function printweekdays() {
-    let b = config.months.days[i];
-    for (let i = 1; i <= config.months[0].days; i++) {
-
-        console.log("| " + i);
-    }
+  
 }
 
 printMonth();
-
-
