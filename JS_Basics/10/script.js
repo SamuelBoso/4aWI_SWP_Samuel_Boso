@@ -35,16 +35,33 @@ function formatNumber(daynumber){
     }
 }
 
+let offsettext ="";
+let test = 0;
 function offsethandler(monthlength){
     
-    config.startday = 3;
-    config.startday = (config.startday + config.months[monthlength].days) % 7;
-    let offsettext = ""; 
-    for(let m = 1; m < config.startday; m++){
-        offsettext += " -- ";   
-        
+    if(test == 0){
+        config.startday = 0;
     }
-    console.log(offsettext);
+    test++;
+    config.startday = config.startday + config.months[monthlength].days % 7;
+    if(config.startday >= 7){
+        config.startday %= 7;
+    }
+    offsettext = ""; 
+    let j = 0;
+    for(let m = 1; m <= config.startday; m++){
+        
+        
+        if(j > 0){
+            offsettext += " -- |";  
+        }else{
+            offsettext += "-- |";   
+        }
+        
+        j++;
+    }
+    return offsettext;
+    
     }
 
 
@@ -53,29 +70,43 @@ function printMonth() {
 
     for (let p = 0; p < 12; p++) {
         printdays();
-        offsethandler(p);
         
-        let example = "| ";
+        
+        var example = "| ";
         for (let i = 1; i <= config.months[p].days; i++) {
             
+              
+              //  example += offsettext + example;
             
+            if(i < 2){
+                example += offsettext + " " + formatNumber(i) + " | ";
+            }
+            else{
             example += formatNumber(i) + " | ";
             
-            if (i % 7 == 0) {
+            if((config.startday + i) == 8){
+                console.log(example + "\n");
+                example = "| ";
+            }
+            else if ((config.startday + i) % 7 == 0) {
                 
                 console.log(example);
                 example = "| ";
-            } else if (i == config.months[p].days) {
+            } else if (i == config.months[p].days) {            
                 console.log(example);
                 example = "";
+                }
             }
+        
+        }
+        offsethandler(p);
         
                      
           
         }
         
         
-    }
+    
   
 }
 
