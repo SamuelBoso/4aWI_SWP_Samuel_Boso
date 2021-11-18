@@ -1,8 +1,6 @@
-
-
 let config = {
     month: 0,
-    startday: 0,
+    startday: 2,
     months:
     [
         {name: "Jan", days:31},
@@ -36,31 +34,33 @@ function formatNumber(daynumber){
 }
 
 let offsettext ="";
-let test = 0;
-function offsethandler(monthlength){
+let january_exception = 0;
+function offsethandler(indexofmonth, example){
     
-    if(test == 0){
-        config.startday = 0;
+    if(january_exception == 0)
+    {
+        config.startday == config.startday;
     }
-    test++;
-    config.startday = config.startday + config.months[monthlength].days % 7;
+    else{
+    config.startday = config.startday + config.months[indexofmonth].days % 7;
+    }
+    
+    january_exception++;
+
     if(config.startday >= 7){
         config.startday %= 7;
     }
-    offsettext = ""; 
-    let j = 0;
+    offsettext = "|"; 
+    
     for(let m = 1; m <= config.startday; m++){
         
         
-        if(j > 0){
-            offsettext += " -- |";  
-        }else{
-            offsettext += "-- |";   
-        }
         
-        j++;
+            offsettext += " -- |";
+       
     }
-    return offsettext;
+    example += offsettext;
+    return example;
     
     }
 
@@ -68,46 +68,40 @@ function offsethandler(monthlength){
 
 function printMonth() {
 
+   
+
     for (let p = 0; p < 12; p++) {
+        console.log("------------------------------------");
         printdays();
+        let example = " ";
+        if(p == 0){
+            offsethandler(p, example); 
+        }
         
-        
-        var example = "| ";
         for (let i = 1; i <= config.months[p].days; i++) {
             
-              
-              //  example += offsettext + example;
-            
-            if(i < 2){
-                example += offsettext + " " + formatNumber(i) + " | ";
-            }
-            else{
             example += formatNumber(i) + " | ";
             
-            if((config.startday + i) == 8){
-                console.log(example + "\n");
+            if((config.startday + i) == 7){
+                
+                console.log(offsettext + example + "\n");
                 example = "| ";
             }
             else if ((config.startday + i) % 7 == 0) {
-                
                 console.log(example);
                 example = "| ";
-            } else if (i == config.months[p].days) {            
+            } else if (i == config.months[p].days) {           
                 console.log(example);
                 example = "";
-                }
+                } 
             }
+            offsethandler(p, example); 
+        }
+       
+           
         
         }
-        offsethandler(p);
-        
-                     
-          
-        }
-        
-        
     
-  
-}
+
 
 printMonth();
