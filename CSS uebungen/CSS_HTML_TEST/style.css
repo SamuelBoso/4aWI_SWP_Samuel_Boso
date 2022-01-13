@@ -1,0 +1,40 @@
+.test {
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+
+.test2 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    top: 20px;
+    right: 40px;
+    position: absolute;
+}
+
+.test3 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    top: 20px;
+    left: 40px;
+    position: absolute;
+}
+
+.cube1 {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.cube2 {
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    margin-top: -30px;
+    position: absolute;
+}

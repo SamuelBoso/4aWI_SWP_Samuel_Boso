@@ -1,0 +1,31 @@
+#content{
+    background-color: grey;
+    height:100vw;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+}
+#wrapper{
+    margin: 0 auto;
+    background-color: greenyellow;
+    width:400px;
+    height:400px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+#right{
+    background-color: white;
+    margin-right: 10px;
+}
+#ausgabe{
+    background-color: white;
+   margin-right: 10px;
+   width:100px;
+   margin-top:10px;
+}
+#left{
+    margin-left: 10px;
+}
+
