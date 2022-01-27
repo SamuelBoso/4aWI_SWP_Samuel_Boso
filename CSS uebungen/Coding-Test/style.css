@@ -2,6 +2,7 @@
     background-color: grey;
     height:100vw;
     width:100vw;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
@@ -9,8 +10,7 @@
     margin: 0 auto;
     background-color: greenyellow;
     width:400px;
-    height:400px;
-    
+    height:400px; 
     display: flex;
     justify-content: space-between;
 }

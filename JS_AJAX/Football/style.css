@@ -1,0 +1,79 @@
+li{
+    list-style: none;
+}
+#teams li{
+  padding:8px;
+  padding-left:80px;
+  color:black;
+
+}
+#pic li{
+  padding-left: 10px;
+  
+
+}
+#standings li{
+  padding:8px;
+  padding-left:20px;
+  color:black;
+
+}
+#wins li{
+  padding:8px;
+  padding-left:10px;
+  
+}
+#draws li{
+  padding:8px;
+  padding-left:10px;
+  
+}
+#defeats li{
+  padding:8px;
+  padding-left:10px;
+  
+}
+#difference li{
+  padding:8px;
+  padding-left:10px;
+  
+}
+#goals li{
+  padding:8px;
+  padding-left:10px;
+  
+}
+#points li{
+  padding:8px;
+  padding-left:10px;
+   color:black;
+  
+}
+
+.test table {
+  display: flex;
+  list-style: none;
+  border-collapse: separate;
+  
+}
+.test th{
+  background-color:#410449;
+  color:white;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.test td {
+  border: solid 3px lightgrey;
+  border-style: solid none;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+h4{
+  font-family: Verdana, "Lucida Sans Unicode", sans-serif
+}
+
+
