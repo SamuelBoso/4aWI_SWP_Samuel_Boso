@@ -1,9 +1,9 @@
 export default class Actor{
-    render(){
+    render(context){
 
     }
 
     update(){
-        
+
     }
 }
