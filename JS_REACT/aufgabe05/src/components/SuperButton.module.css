@@ -16,3 +16,6 @@
     margin-left: 0px;
     color:white;
 }
+.button:hover{
+    background-color: #96dfd7;
+}

@@ -1,0 +1,5 @@
+.Card{
+    margin-top:40px;
+    display:grid;
+   justify-content: left;
+}
