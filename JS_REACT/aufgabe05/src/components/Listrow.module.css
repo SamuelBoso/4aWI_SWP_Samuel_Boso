@@ -1,0 +1,15 @@
+.test li{
+    background-color: #40e0d0;
+    width:500px;
+    border-style:solid;
+    border-radius: 15px;
+    border-color:white;
+    list-style-type: none;
+    padding: 42px;
+}
+.test li:hover{
+    background-color: #96dfd7;
+}
+.test h1{
+    text-align: left;
+}
