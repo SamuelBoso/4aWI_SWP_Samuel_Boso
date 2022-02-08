@@ -12,7 +12,7 @@ function randomnumber()
     let number = "";
 
     for(i=num1; i<=amountOfRandomNumbers;i++)
-    {
+    {gi
         number += i + " ";
         
     }
